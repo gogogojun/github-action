@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubutu-leatest
+    runs-on: ubuntu-leatest
     steps:
       - name: print hello
         run: echo "test"
