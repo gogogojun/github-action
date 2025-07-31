@@ -9,5 +9,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: print hello
-        run: echo "test"
+      - run: echo "building"
+
+  test2:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Running tests.."
