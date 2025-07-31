@@ -1,0 +1,13 @@
+name: Main_Workflows
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  tset:
+    runs-on: ubutu-leatest
+    steps:
+      - name: print hello
+        run: echo "test"
